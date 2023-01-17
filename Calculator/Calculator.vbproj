@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Calculator</RootNamespace>
+    <StartupObject>Calculator.Form1</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>calculator_png102230_yDs_icon.ico</ApplicationIcon>
+    <Company>Olasquare Consults</Company>
+    <Description>Calculator developed by Olayinka Saheed Olayemi a.k.a Olasquare</Description>
+    <Copyright>Olasqaure Consults</Copyright>
+    <PackageIcon>calculator_PNG102230.png</PackageIcon>
+    <PackageIconUrl />
+    <NeutralLanguage />
+    <PackageReleaseNotes>This application is free to use and its is virus free.. feel free to report any error(s) found on the app or any suggested feature to add to this application to this Email: olayinkasaheedolayemi@gmail.com or call: +2347030796165 in other to serve you better..Thanks</PackageReleaseNotes>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Scientific_ Cal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
